@@ -1,0 +1,6 @@
+export const INCREMENT = 'INCREMENT'
+export const INCREMENT2 = 'INCREMENT2'
+export const DECREMENT = 'DECREMENT'
+export const DECREMENT2 = 'DECREMENT2'
+export const SIGN_IN = 'SIGN_IN'
+export const SIGN_OUT = 'SIGN_OUT'
