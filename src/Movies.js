@@ -3,13 +3,22 @@ import { signIn, signOut } from './redux/actions'
 
 const Search = () => {
   const counter = useSelector((state) => state.counter)
+  const logged = useSelector((state) => state.sign.logged)
   const dispatch = useDispatch()
+
   return (
     <div>
-      <input type='text' />
-      <h1>Hey {counter}</h1>
-      <button onClick={() => dispatch(signIn)}>Sing in</button>
-      <button onClick={() => dispatch(signOut)}>Sing out</button>
+      <h4>Counter again: {counter}</h4>
+      <button
+        onClick={() => dispatch(signIn)}
+        disabled={logged  ?  'disabled'  :  ''}
+      >Sing in
+      </button>
+      <button
+        onClick={() => dispatch(signOut)}
+        disabled={logged  ?  ''  :  'disabled'}
+      >Sing out
+      </button>
     </div>
   )
 }

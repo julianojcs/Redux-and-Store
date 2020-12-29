@@ -1,3 +1,27 @@
 .App {
+  position: relative;
   margin: 50px;
+}
+
+.logged {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logged>h2 {
+  margin: 0;
+}
+
+.logged>h2>span {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.logged>h2>span.yes {
+  color: limegreen;
+}
+
+.logged>h2>span.no {
+  color: red;
 }
